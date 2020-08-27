@@ -1,0 +1,129 @@
+/** @format */
+.woocommerce-chart {
+	margin-top: -$gap;
+	margin-bottom: $gap-large;
+	background: $studio-white;
+	border: 1px solid $core-grey-light-700;
+	border-top: 0;
+
+	@include breakpoint( '<782px' ) {
+		margin-left: -16px;
+		margin-right: -16px;
+		margin-bottom: $gap-small;
+		border-left: none;
+		border-right: none;
+		width: auto;
+	}
+
+	.woocommerce-chart__header {
+		min-height: 50px;
+		border-bottom: 1px solid $core-grey-light-700;
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-between;
+		align-items: center;
+		width: 100%;
+
+		.woocommerce-chart__title {
+			height: 18px;
+			color: $wp-admin-sidebar;
+			font-size: 15px;
+			font-weight: 600;
+			line-height: 18px;
+			margin-left: $gap;
+			margin-right: $gap;
+		}
+	}
+
+	.woocommerce-chart__body {
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+		align-items: flex-start;
+		width: 100%;
+
+		&.woocommerce-chart__body-column {
+			flex-direction: column;
+		}
+	}
+
+	.woocommerce-chart__footer {
+		width: 100%;
+	}
+}
+
+.woocommerce-chart-placeholder {
+	@include placeholder();
+	padding: 0;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	.components-spinner {
+		margin: 0;
+	}
+}
+
+.woocommerce-chart__interval-select {
+	align-items: start;
+	border-right: 1px solid $core-grey-light-700;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: 0 0 0 auto;
+	min-height: 50px;
+	padding: 8px $gap 0 $gap;
+
+	@include breakpoint( '<960px' ) {
+		width: 100%;
+		order: 1;
+		margin-top: -8px;
+		margin-left: 0;
+		padding-left: $gap / 2;
+		border-right: 0;
+		min-height: 0;
+	}
+
+	#wpbody & .components-select-control__input {
+		@include font-size( 13 );
+		border: 0;
+		box-shadow: none;
+
+		&:not(:disabled):not([aria-disabled='true']):focus {
+			@include button-style__focus-active();
+		}
+	}
+}
+
+.woocommerce-chart__types {
+	padding: 0 8px;
+	white-space: nowrap;
+}
+
+.woocommerce-chart__type-button {
+	background: transparent !important;
+	&.components-icon-button {
+		color: $core-grey-light-700;
+		display: inline-flex;
+		&.woocommerce-chart__type-button-selected {
+			color: $core-grey-dark-500;
+		}
+		&:hover {
+			box-shadow: none !important;
+		}
+	}
+}
+
+@include breakpoint( '<960px' ) {
+	.woocommerce-summary + .woocommerce-chart {
+		.woocommerce-chart__title {
+			display: none;
+		}
+
+		.woocommerce-chart__interval-select {
+			width: auto;
+			order: 0;
+			margin-top: 0;
+		}
+	}
+}

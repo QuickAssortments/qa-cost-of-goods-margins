@@ -1,0 +1,80 @@
+/** @format */
+
+.woocommerce-page .woocommerce-dropdown-button {
+	background-color: $studio-white;
+	position: relative;
+	border: 1px solid $core-grey-light-500;
+	color: $core-grey-dark-500;
+	border-radius: 4px;
+	padding: 0 40px 0 0;
+	width: 100%;
+
+	&::after {
+		content: '';
+		position: absolute;
+		right: 14px;
+		top: 50%;
+		transform: translateY(-50%);
+		width: 0;
+		height: 0;
+		border-style: solid;
+		border-width: 6px 6px 0 6px;
+		border-color: $core-grey-dark-500 transparent transparent transparent;
+		@include animate-transform;
+	}
+
+	&.is-open {
+		&::after {
+			transform: translateY(-50%) rotate(180deg);
+		}
+	}
+
+	&:hover,
+	&:active,
+	&.is-open {
+		background-color: $core-grey-light-100;
+	}
+
+	&.is-multi-line .woocommerce-dropdown-button__labels {
+		flex-direction: column;
+	}
+}
+
+.woocommerce-dropdown-button__labels {
+	text-align: left;
+	padding: 8px 12px;
+	min-height: 48px;
+	display: flex;
+	align-items: center;
+	width: 100%;
+	justify-content: space-around;
+
+	@include breakpoint( '<400px' ) {
+		min-height: 46px;
+	}
+
+	span {
+		width: 100%;
+		text-align: left;
+
+		&:last-child {
+			@include font-size( 12 );
+			margin: 0;
+		}
+
+		&:first-child {
+			@include font-size( 13 );
+			font-weight: 600;
+		}
+
+		@include breakpoint( '<400px' ) {
+			&:last-child {
+				@include font-size( 10 );
+			}
+
+			&:first-child {
+				@include font-size( 12 );
+			}
+		}
+	}
+}

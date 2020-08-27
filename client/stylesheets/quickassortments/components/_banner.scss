@@ -1,0 +1,23 @@
+// Banner styles
+.qa-banner {
+  background: #C18497;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 10px 0 !important;
+  font-size: 17px;
+  font-weight: bolder;
+  margin-left: -2em;
+  margin-right: -2em;
+
+  img {
+    width: 20px;
+    display: inline-block;
+    margin: 0px auto;
+    vertical-align: -4px;
+    background: #fff;
+    margin-right: 5px;
+    border: 1px solid #FCE4EE !important;
+    border-radius: 3px;
+  }
+}

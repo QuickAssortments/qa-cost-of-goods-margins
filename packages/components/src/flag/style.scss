@@ -1,0 +1,15 @@
+/** @format */
+.woocommerce-flag {
+	span {
+		vertical-align: middle;
+	}
+
+	.woocommerce-flag__fallback {
+		background: $core-grey-light-500;
+		color: transparent;
+		width: 24px;
+		height: 18px;
+		display: block;
+		overflow: hidden;
+	}
+}

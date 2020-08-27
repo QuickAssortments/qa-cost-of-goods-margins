@@ -1,0 +1,8 @@
+// List table Styles
+table {
+  &.wp-list-table {
+    .column-name {
+      width: 8% !important;
+    }
+  }
+}

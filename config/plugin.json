@@ -1,0 +1,10 @@
+{
+	"features": {
+		"activity-panels": true,
+		"analytics": true,
+		"analytics-dashboard": true,
+		"analytics-dashboard/customizable": true,
+		"onboarding": false,
+		"store-alerts": true
+	}
+}

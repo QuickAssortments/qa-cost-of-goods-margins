@@ -1,0 +1,12 @@
+/node_modules/
+*-lock.json
+*.lock
+phpunit.xml
+/vendor/
+!bin/
+!client/lib
+
+dist
+build
+build-module
+build-style

@@ -1,0 +1,35 @@
+.quickassortments_page__qa_cog_retail_insights_settings {
+  .about-wrap {
+      .components-button {
+          &.is-primary {
+              &:hover {
+                  background: #da6e99 !important;
+                  border-color: #da6e99 !important;
+              }
+          }
+          &.is-default {
+              &:disabled {
+                  &:hover {
+                      color: #a0a5aa;
+                      border-color: #ddd;
+                  }
+                  color: #a0a5aa;
+                  border-color: #ddd;
+              }
+          }
+      }
+
+    margin: 30px 0 0 0;
+    h2 {
+      text-align: left;
+    }
+    h3 {
+      margin: 0.25em 0;
+    }
+    .wp-badge {
+      background-color: #FCE4EE !important;
+      border: 1px solid #C18497 !important;
+      color: #C18497;
+    }
+  }
+}

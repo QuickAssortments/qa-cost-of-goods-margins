@@ -1,0 +1,41 @@
+// Primary brand color
+$qa-pri-pink: #F27AAA;
+$qa-pri-green: #98CA98;
+$qa-pri-blue: #3093BA;
+$qa-pri-gray-dark: #6D6E70;
+$qa-pri-gray-light: #BBBDBF;
+
+// Complementary brand color
+// Pink
+$qa-com-pink-100: #FCE4EE;
+$qa-com-pink-200: #FACADD;
+$qa-com-pink-300: #F495BB;
+$qa-com-pink-400: #C18497;
+$qa-com-pink-500: #90566A;
+// Green
+$qa-com-green-100: #E7F3E7;
+$qa-com-green-200: #D4E8D2;
+$qa-com-green-300: #C0DEBE;
+$qa-com-green-400: #8EA588;
+$qa-com-green-500: #596658;
+// Blue
+$qa-com-blue-100: #D4E1EC;
+$qa-com-blue-200: #89B5D1;
+$qa-com-blue-300: #64A3C5;
+$qa-com-blue-400: #6F8398;
+$qa-com-blue-500: #486A81;
+// Dark Gray
+$qa-com-dark-gray-100: #E6E7E8;
+$qa-com-dark-gray-200: #BBBDBF;
+$qa-com-dark-gray-300: #929497;
+// Light Gray
+$qa-com-light-gray-100: #F1F1F2;
+$qa-com-light-gray-200: #D0D2D3;
+$qa-com-light-gray-300: #A6A8AB;
+
+// WooCommerce default color code override
+$studio-woocommerce-purple-70: $qa-com-pink-500;
+$studio-woocommerce-purple-60: $qa-pri-pink;
+$studio-woocommerce-purple: $qa-com-pink-400;
+$studio-pink-50: $qa-com-pink-300;
+$studio-pink: $qa-com-pink-500;

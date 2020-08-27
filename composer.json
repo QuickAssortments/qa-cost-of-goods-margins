@@ -1,0 +1,35 @@
+{
+	"name": "quickassortments/qa-cost-of-goods-margins",
+	"description": "Manage cost prices for your products and variations and instantly see the impact on margin, markup and value on hand in your store.",
+	"license": "GPL-2.0",
+	"type": "wordpress-plugin",
+	"authors": [
+		{
+			"name": "QuickAssortments AB",
+			"homepage": "https://quickassortments.com/",
+			"email": "service@quickassortments.com",
+			"role": "Company"
+		},
+		{
+			"name": "Khan Mohammad R.",
+			"email": "khan@quickassortments.com",
+			"role": "Developer"
+		}
+	],
+	"require": {
+	},
+	"require-dev": {
+	},
+	"autoload": {
+		"psr-4": {
+			"QuickAssortments\\COG\\": "src/"
+		}
+	},
+	"minimum-stability": "dev",
+	"prefer-stable": true,
+	"scripts": {
+		"ci": [
+			"vendor/bin/phpcs"
+		]
+	}
+}
