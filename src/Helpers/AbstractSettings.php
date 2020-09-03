@@ -64,11 +64,11 @@ abstract class AbstractSettings
 
         // Add any posted messages
         if (! empty($_GET['wc_error'])) {  // WPCS: sanitization ok.
-            self::add_error(stripslashes(sanitize_key($_GET['wc_error'])));
+            self::add_error(stripslashes(sanitize_textarea_field($_GET['wc_error'])));
         }
 
         if (! empty($_GET['wc_message'])) { // WPCS: sanitization ok.
-            self::add_message(stripslashes(sanitize_key($_GET['wc_message'])));
+            self::add_message(stripslashes(sanitize_textarea_field($_GET['wc_message'])));
         }
 
         self::show_messages();

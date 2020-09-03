@@ -368,8 +368,8 @@ final class Fields
      */
     public function save_cost_field($product)
     {
-        $cp = apply_filters('qa_cog_general_product_before_save_cost_price', sanitize_key($_POST[$this->prefix . 'cost']), $product);
-        $cp = wc_format_decimal($cp);
+        $cp = apply_filters('qa_cog_general_product_before_save_cost_price', wc_format_decimal(sanitize_text_field($_POST[$this->prefix . 'cost'])), $product);
+
         if (! isset($cp) || is_null($cp) || ! is_numeric($cp)) {
             return false;
         }
@@ -390,8 +390,7 @@ final class Fields
      */
     public function save_variation_cost_field($variation_id, $i)
     {
-        $cp = apply_filters('qa_cog_variation_product_before_save_cost_price', sanitize_key($_POST[$this->prefix . 'cost'][$i]), $variation_id, $i);
-        $cp = wc_format_decimal($cp);
+        $cp = apply_filters('qa_cog_variation_product_before_save_cost_price', wc_format_decimal(sanitize_text_field($_POST[$this->prefix . 'cost'][$i])), $variation_id, $i);
 
         $gp = get_post_meta(
             wc_get_product($variation_id)->get_parent_id(),
@@ -415,16 +414,15 @@ final class Fields
      */
     public function save_variable_product_generic_cost_field($product)
     {
-        $cp = apply_filters('qa_cog_variable_product_before_save_parent_cost', sanitize_key($_POST[$this->prefix . 'generic_cost']), $product);
+        $cp = apply_filters('qa_cog_variable_product_before_save_parent_cost', wc_format_decimal(sanitize_text_field($_POST[$this->prefix . 'generic_cost'])), $product);
 
         // Update field enable meta
         update_post_meta(
             $product->get_id(),
             $this->prefix . 'enable_generic_cost',
-            sanitize_key($_POST[$this->prefix . 'enable_generic_cost'])
+            sanitize_text_field($_POST[$this->prefix . 'enable_generic_cost'])
         );
 
-        $cp = wc_format_decimal($cp);
         if (! isset($cp) || is_null($cp) || ! is_numeric($cp)) {
             return false;
         }

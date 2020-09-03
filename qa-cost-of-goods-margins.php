@@ -6,7 +6,7 @@
  * Plugin URI:  https://quickassortments.com/products/
  * Author:      Quick Assortments AB
  * Author URI:  https://quickassortments.com/
- * Version:     2.3.1
+ * Version:     2.4.0
  * License:     GPL-2.0
  * Text Domain: qa-cost-of-goods-margins.
  */
