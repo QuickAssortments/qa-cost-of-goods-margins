@@ -123,6 +123,9 @@ function initialize()
         ( new RI\Settings() )->init();
 
         RI\CategoryLookup::instance()->init();  // Category lookup table updater
+
+        // PW WooCommerce Bulk Edit plugin integration
+        ( new Helpers\PW() )->init();
     } catch (\Throwable $throwable) {
         if (defined('WP_DEBUG') && WP_DEBUG) {
             throw $throwable;
