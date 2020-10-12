@@ -3,7 +3,7 @@ Contributors: quickassortments, redmap, codemascot, cleijsen, clauselbo
 Tags: ecommerce, woocommerce, cost of goods, cost price, margin, markup, net profit, gross profit, forecasting, merchant, merchandising, sales, goods, cost of sales, direct costs 
 Requires at least: 4.9
 Tested up to: 5.5.0
-Stable tag: 2.4.0
+Stable tag: 2.5.0
 Requires PHP: 5.6
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -134,6 +134,11 @@ We have a long list of other very cool plugins related to e-commerce business, m
 We also have a dedicated team for support and we'll try our best to answer any questions or solve any problem you encounter. We're friendly people, so don't hesitate to reach out to us and ask for support, or if you have any idea on how we can make our products better.
 
 == Changelog ==
+= VERSION 2.5.0 | 12-OCT-2020 =
+[FEATURE]
+
+* **PW WooCommerce Bulk Edit** and **PW WooCommerce Bulk Edit Pro** integrated, means now you can bulk edit cost price with these plugins.
+
 = VERSION 2.4.0 | 03-SEP-2020 =
 [FIX]
 
